@@ -6,8 +6,14 @@ function App() {
 
   useEffect(() => {
     console.log("useEffect called");
-    [count]
-  });
+    fetch("https://dog.ceo/api/breeds/image/random/3")
+    .then((r) => r.json())
+    .then((data) => {
+      setImages(data.message);
+    });
+  },
+  []
+  );
 
   console.log("Component rendering");
 
