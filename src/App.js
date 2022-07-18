@@ -8,6 +8,7 @@ function App() {
   console.log("Component rendering");
 
   return <button>Click Me</button>;
+  <input type="text" placeholder="Type away..." />
 }
 
 export default App;
